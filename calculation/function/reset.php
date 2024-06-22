@@ -1,5 +1,5 @@
 <?php
 session_start();
 $_SESSION['currentNumber'] = 1;
-header('Location:../index.php');
+header('Location:../mode.php');
 exit(1);

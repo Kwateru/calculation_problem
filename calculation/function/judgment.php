@@ -17,7 +17,7 @@ if ($_POST["selectResult"]) {
     $selectResult = $_POST["selectResult"];
 }
 
-if ($_SERVER['REQUEST_METHOD'] == "POST" && !empty($_POST['selectResult'])) {
+if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['selectResult'])) {
 
     // 正誤判定
     if ($selectResult == $calcResult) {
@@ -37,8 +37,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && !empty($_POST['selectResult'])) {
         $_SESSION['result'] = $resultNumber;
         header('Location:../result.php');
     }
-} else {
-    echo "選択肢を選んでください。";
 }
 ?>
 
@@ -47,13 +45,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && !empty($_POST['selectResult'])) {
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content=" 5; url=../index.php">
+    <!-- <meta http-equiv="refresh" content=" 5; url=../index.php"> -->
     <link rel="stylesheet" href="../style.css" type="text/css">
     <title>入力エラーのページ</title>
 </head>
 
 <body>
     <div class="site-width">
+        <p>選択肢を選んで下さい！</p>
         <p>これより先は http://localhost/class-b-01-02/calculation/index.php のサイトに遷移します。</p>
         <p>5秒後に自動転送します。</p>
         <p>自動に画面を読み込まない場合は、以下のリンクをクリックして下さい。</p>

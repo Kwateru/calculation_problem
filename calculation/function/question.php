@@ -7,9 +7,7 @@
 // $currentNumber = 1;
 
 
-if (isset($_SESSION['currentNumber'])) {
-
-}else {
+if (!isset($_SESSION['currentNumber'])) {
     $_SESSION['currentNumber'] = 1;
 }
 
