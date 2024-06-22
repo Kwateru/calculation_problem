@@ -3,8 +3,17 @@ session_start();
 
 $currentNumber = (isset($_SESSION['currentNumber'])) ? $_SESSION['currentNumber'] : 1;
 
+if (isset($_SESSION['a']) && isset($_SESSION['b']) && isset($_SESSION['chooseList']) && isset($_SESSION['symbol'])) {
+    $a = $_SESSION['a'];
+    $b = $_SESSION['b'];
+    $chooseList = $_SESSION['chooseList'];
+    $symbol = $_SESSION['symbol'];
+}
+
 // 計算問題と選択肢を自動生成
 include('function/question.php');
+
+include('function/mode_jugment.php')
 
 //****************************************
 //     不正解のときの処理
@@ -35,7 +44,7 @@ include('function/question.php');
 
         <!-- 問題文 -->
         <h2>問題</h2>
-        <p class="question"><?php echo $a . " + " . $b; ?> = ?</p>
+        <p class="question"><?php echo $a . " " . $symbol . " " . $b; ?> = ?</p>
         <h2>選択</h2>
         <form action="function/judgment.php" method="post">
             <!-- 選択1 -->

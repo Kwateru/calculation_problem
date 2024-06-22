@@ -54,10 +54,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && !empty($_POST['selectResult'])) {
 
 <body>
     <div class="site-width">
-        <p>これより先は http://localhost/class-b-01-01/calculation/index.php のサイトに遷移します。</p>
+        <p>これより先は http://localhost/class-b-01-02/calculation/index.php のサイトに遷移します。</p>
         <p>5秒後に自動転送します。</p>
         <p>自動に画面を読み込まない場合は、以下のリンクをクリックして下さい。</p>
-        <p><a href="http://localhost/class-b-01-01/calculation/index.php">計算問題のページに戻る</a></p>
+        <p><a href="http://localhost/class-b-01-02/calculation/index.php">計算問題のページに戻る</a></p>
     </div>
 </body>
 
