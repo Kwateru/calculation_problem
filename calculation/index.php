@@ -40,7 +40,8 @@ include('function/problem_generation.php');
 
             <input type="submit" value="回答">
         </form>
-        <p><a href="function/reset.php" class="return_link">最初に戻る</a></p>
+        <a href="function/reset.php" class="return_link">最初に戻る</a>
+        <a href="mode.php" class="return_link">メニューに戻る</a>
     </div>
 </body>
 
