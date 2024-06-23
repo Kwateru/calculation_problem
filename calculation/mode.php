@@ -13,11 +13,12 @@
         <h2>問題の種類を選んでね！</h2>
 
         <form action="function/mode_jugment.php" method="post">
-            <label><input type="radio" name="mode" value="addition">足し算</label>
-            <label><input type="radio" name="mode" value="subtraction">引き算</label>
-            <label><input type="radio" name="mode" value="multiplication">掛け算</label>
-
-            <input type="submit" value="選択">
+            <div class="mode">
+                <label><input type="radio" name="mode" value="addition"><img src="image/addition.png" alt="" height="100" width="100"></label>
+                <label><input type="radio" name="mode" value="subtraction"><img src="image/subtraction.png" alt="" height="100" width="100"></label>
+                <label><input type="radio" name="mode" value="multiplication"><img src="image/multiplication.png" alt="" height="100" width="100"></label>
+                <input type="submit" value="選択">
+            </div>
         </form>
     </div>
 </body>

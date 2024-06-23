@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['selectResult'])) {
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta http-equiv="refresh" content=" 5; url=../index.php"> -->
+    <meta http-equiv="refresh" content=" 5; url=../index.php">
     <link rel="stylesheet" href="../style.css" type="text/css">
     <title>入力エラーのページ</title>
 </head>

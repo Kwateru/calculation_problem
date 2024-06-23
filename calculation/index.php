@@ -3,9 +3,6 @@ session_start();
 
 $currentNumber = (isset($_SESSION['currentNumber'])) ? $_SESSION['currentNumber'] : 1;
 
-// 計算問題と選択肢を自動生成
-// include('function/question.php');
-
 include('function/problem_generation.php');
 
 ?>
