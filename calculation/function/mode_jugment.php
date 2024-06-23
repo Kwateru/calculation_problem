@@ -1,5 +1,9 @@
 <?php
 session_start();
+
+// モード変更時に前のセッション変数を初期化
+$_SESSION['currentNumber'] = 1;
+
 // フォームからmodeという名前のデータがPOSTメソッドで送信されたことを確認
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['mode'])) {
 
