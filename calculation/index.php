@@ -1,8 +1,10 @@
 <?php
 session_start();
 
+// セッション変数の初期化
 $currentNumber = (isset($_SESSION['currentNumber'])) ? $_SESSION['currentNumber'] : 1;
 
+// モード選択によって問題生成の種類を変更
 include('function/problem_generation.php');
 
 ?>

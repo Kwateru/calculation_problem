@@ -8,7 +8,7 @@
 /*-------------------------
 　0 共通パーツ
 -------------------------*/
-body{
+body {
     margin: 0 auto;
     color: #333;
     display: flex;
@@ -16,21 +16,21 @@ body{
     align-items: center;
 }
 
-.site-width{
+.site-width {
     text-align: center;
     /* height: 50px;
     line-height: 50px; */
     /* margin: 0 auto; */
 }
 
-.return_link{
+.return_link {
     text-decoration: none;
     color: #333;
     border: solid 1px;
     padding: 6px;
 }
 
-.return_link:hover{
+.return_link:hover {
     opacity: 0.7;
 }
 
@@ -38,7 +38,7 @@ body{
 /*-------------------------
 　1 index.php
 -------------------------*/
-.question{
+.question {
     font-size: 50px;
 }
 
@@ -47,27 +47,23 @@ body{
 /*-------------------------
 　2 mode.php
 -------------------------*/
-.mode label{
-    /* display: block; */
-}
-
-.mode input[type="radio"]{
+.mode input[type="radio"] {
     display: none;
 }
 
-.mode input[type="submit"]{
+.mode input[type="submit"] {
     display: block;
     margin: 0 auto;
     padding: 10px 50%;
 }
 
-.mode img{
+.mode img {
     margin-left: 30px;
     padding: 50px;
     border: 1px solid #333;
     margin-bottom: 50px;
 }
 
-.mode input:checked+img{
+.mode input:checked+img {
     border: 6px solid #333;
 }
